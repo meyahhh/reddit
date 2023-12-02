@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: -10px;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    margin-right: 10px;
+    padding-right: 100px;
+}
+
+.left-align {
+     margin-left: 0;
+
+}
+
+/* search button */
+
+.search-label {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-70%);
+    color: #B6B6B6; /* Adjust the color as needed */
+    z-index: 10; /* Ensure label is above other elements */
+}
+
+.round {
+    background-color: #EAEDEF;
+    width: 800px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    margin: 0;
+}
+
+.corner {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: url('pics/20x20in\ design.png') no-repeat; /* Replace 'search-icon.svg' with the path to your search icon image */
+    background-size: cover; /* Adjust the size as needed */
+}
+
+.search {
+    position: relative;
+    width: 700px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+/* end search button */
+
+/* right side buttons */
+
+.header-buttons {
+    width: 250px;
+    height: 50px;
+    padding-left: 200px;
+    display: flex;
+    justify-content:space-around;
+    margin: 5px; /* Adjust margin as needed */
+}
+
+.GetApp {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #EAEDEF;
+    border: none;
+    padding: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-containerqr{
+    display: flex;
+    align-items: center;
+}
+
+.icon-containerqr img {
+    width: 20px; /* Adjust the width of the icon as needed */
+    height: 20px; /* Adjust the height of the icon as needed */
+    margin-right: 8px; /* Adjust the margin between icon and text */
+}
+
+
+.LogIn {
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #D93A00;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    line-height: 1; /* Adjust line-height to vertically center text */
+}
+
+.ThreeDots {
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    overflow: hidden; /* Hide overflow for dots */
+    background-color: #EAEDEF; /* Background color for the button */
+    /* Flexbox styles to center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pseudo-elements for the dots */
+.ThreeDots::before,
+.ThreeDots::after {
+    content: '\2026'; /* Unicode character for ellipsis (three dots) */
+    font-size: 25px; /* Adjust the size of the dots */
+    color: #000; /* Adjust the color of the dots */
+    position: absolute;
+    top: -1px;
+}
