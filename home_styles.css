@@ -161,8 +161,6 @@ header {
 }
 
 
-
-
 /* end right side buttons */
 /* end header */
 
@@ -315,8 +313,8 @@ header {
 }
 
 .pfp-container img {
-    width: 40px; /* Adjust the size as needed */
-    height: 40px; /* Adjust the size as needed */
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
     border-radius: 50%;
     object-fit: cover; /* Maintain aspect ratio */
 }
@@ -399,25 +397,39 @@ header {
 
 aside {
     width: 250px; /* Adjust the width as needed */
+    height: 350px;
+    border-radius: 15px;
     background-color: #F9FAFA;
     margin-left: 1100px;
-    margin-top: -600px;
+    margin-top: -700px;
 
   }
 
   aside ul {
     list-style-type: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding for the list */
+    padding: 0px; /* Remove default padding for the list */
   }
 
   aside li {
     margin-bottom: 10px; /* Adjust spacing between list items */
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
   }
+
+  .icon-container-side  {
+    width: 40px; /* Adjust the width of the icon as needed */
+    height: 40px; /* Adjust the height of the icon as needed */
+    margin-right: 8px; /* Adjust the margin between icon and text */
+    margin-top: -2px;
+}
 
   aside h2{
     font-size: 13px; /* Adjust the font size for community names */
     color: #555; /* Adjust the text color for community names */
+    padding-left: 10px;
   }
+
   aside strong {
     font-size: 15px; /* Adjust the font size for community names */
     color: #333; /* Adjust the text color for community names */
@@ -426,5 +438,12 @@ aside {
   aside p {
     font-size: 14px; /* Adjust the font size for description text */
     color: #555; /* Adjust the text color for description text */
+    margin-top: 3px;
+  }
+
+  .see-more-aside{
+    font-size: 13px; /* Adjust the font size for description text */
+    color: #555; /* Adjust the text color for description text */
+    padding-left: 10px;
   }
 
