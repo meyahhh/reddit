@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #131212;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 120px;
+    margin-right: 10px;
+}
+
+.header-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.about,
+.careers,
+.press,
+.brand,
+.transparency,
+.blog,
+.join-now {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    border: none;
+    color: #131212;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: larger;
+    position: relative;
+}
+
+/* Target the "special-class" added to the "About" link */
+.about.special-class::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #131212;
+    bottom: 0px; /* Adjust this value to move the underline down */
+    left: 0;
+}
+
+.join-now {
+    padding: 10px;
+    border-radius: 20px;
+    border: 2px solid transparent;
+    color: #fff;
+    text-decoration: none;
+    background-color: #ff4500;
+    cursor: pointer;
+    font-size: larger;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.join-now:hover {
+    background-color: #fff;
+    color: #ff4500;
+    border-color: #ff4500;
+}
+
+.content-container {
+    background-image: url('pics/about_bckgrnd.png'); /* Add your background image path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 20px; /* Add padding as needed */
+}
