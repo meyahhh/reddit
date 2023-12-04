@@ -290,14 +290,17 @@ header {
     margin-left: 250px;
     padding: 20px;
     margin-top: 100px;
+    padding-bottom: 0px;
     /* border: 1px solid #ccc; */
 }
 
 .post-container1 {
     max-width: 750px;
-    margin: 20px auto;
+    margin-top: 0px ;
     margin-left: 250px;
     padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
     /* margin-top: 100px; */
     /* border: 1px solid #ccc; */
 }
@@ -397,11 +400,11 @@ header {
 
 aside {
     width: 250px; /* Adjust the width as needed */
-    height: 350px;
+    height: 370px;
     border-radius: 15px;
     background-color: #F9FAFA;
     margin-left: 1100px;
-    margin-top: -700px;
+    margin-top: -1100px;
 
   }
 
@@ -428,6 +431,7 @@ aside {
     font-size: 13px; /* Adjust the font size for community names */
     color: #555; /* Adjust the text color for community names */
     padding-left: 10px;
+    padding-top: 10px;
   }
 
   aside strong {
