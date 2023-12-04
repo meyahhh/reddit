@@ -12,9 +12,11 @@
         <img src="pics/Reddit Logo.svg" class="left-align"alt="Your Logo">
     </div>
     <div class="search">
-        <label for="search" class="search-label">Search Reddit</label>
-        <input type="text" name="search" class="round" />
-        <input type="submit" class="corner" value="" />
+        <form onsubmit="redirectPage(event)">
+            <label for="search" class="search-label">Search Reddit</label>
+            <input type="text" name="search" class="round" />
+            <input type="submit" class="corner" value="" />
+        </form>
     </div>
     <div class="header-buttons">
         <button class="GetApp"> 
@@ -121,28 +123,10 @@
         <p>Reddit, Inc. © 2023. All rights reserved.</p>
     </div>
 
-    <!-- <div class="scroll-container">
-        <div class="scroll-item">
-            <img src="pics/stock1.png" alt="Image 1">
-            <div class="text">Cuban sells majority...</div>
-        </div>
-        <div class="scroll-item">
-            <img src="pics/stock1.png" alt="Image 2">
-            <div class="text">Cuban sells majority...</div>
-        </div>
-        <div class="scroll-item">
-            <img src="pics/stock1.png" alt="Image 2">
-            <div class="text">Cuban sells majority...</div>
-        </div>
-        <div class="scroll-item">
-            <img src="pics/stock1.png" alt="Image 2">
-            <div class="text">Cuban sells majority...</div>
-        </div>
-    </div> -->
-
     <div class="divider"></div> <!-- Divider -->
 
     <div class="post-container">
+        <div class="divider"></div> <!-- Divider -->
         <div class="post">
             <div class="post-header">
                 <div class="pfp-container">
@@ -200,8 +184,9 @@
             </div>
         </div>
     </div>
-
+    
     <div class="post-container1">
+        <div class="divider"></div> <!-- Divider -->
         <div class="post">
             <div class="post-header">
                 <div class="pfp-container">
@@ -243,11 +228,146 @@
                     </div>
                     </button>
             </div>
-            
-    </div>  
-
+        </div>
+    </div> 
+     
+    <div class="post-container1">
+        <div class="divider"></div> <!-- Divider -->
+        <div class="post">
+            <div class="post-header">
+                <div class="pfp-container">
+                    <!-- Add your profile picture here -->
+                    <img src="pics/userpfp.png" alt="Profile Picture">
+                </div>
+                <div class="user-info">r/adultingph</div>
+                <span class="dot"></span>
+                <div class="post-meta">1 hour ago </div>
+                <div class="post-buttons">
+                    <button class="join-button">Join</button>
+                    <a href="#" class="other-actions-button">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="post-title">Sample Post Title 2</div>
+            <div class="post-content">
+                Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+            </div>
+            <div class="post-footer">
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/upvote.png" alt="Right Icon">
+                        20
+                        <img src="pics/downvote.png" alt="Right Icon">
+                    </div>
+                    </button>
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/Comment icon.png" alt="Right Icon">
+                        67
+                    </div>
+                    </button>
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/Share icon.png" alt="Right Icon">
+                        Share
+                    </div>
+                    </button>
+            </div>
+        </div>
+    </div> 
         <!-- Add more posts as needed -->
-    </div>
+        <div class="post-container1">
+            <div class="divider"></div> <!-- Divider -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="pfp-container">
+                        <!-- Add your profile picture here -->
+                        <img src="pics/userpfp.png" alt="Profile Picture">
+                    </div>
+                    <div class="user-info">r/adultingph</div>
+                    <span class="dot"></span>
+                    <div class="post-meta">1 hour ago </div>
+                    <div class="post-buttons">
+                        <button class="join-button">Join</button>
+                        <a href="#" class="other-actions-button">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-title">Sample Post Title 2</div>
+                <div class="post-content">
+                    Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+                </div>
+                <div class="post-footer">
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/upvote.png" alt="Right Icon">
+                            20
+                            <img src="pics/downvote.png" alt="Right Icon">
+                        </div>
+                        </button>
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/Comment icon.png" alt="Right Icon">
+                            67
+                        </div>
+                        </button>
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/Share icon.png" alt="Right Icon">
+                            Share
+                        </div>
+                        </button>
+                </div>
+            </div>
+        </div> 
+
+        <div class="post-container1">
+            <div class="divider"></div> <!-- Divider -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="pfp-container">
+                        <!-- Add your profile picture here -->
+                        <img src="pics/userpfp.png" alt="Profile Picture">
+                    </div>
+                    <div class="user-info">r/adultingph</div>
+                    <span class="dot"></span>
+                    <div class="post-meta">1 hour ago </div>
+                    <div class="post-buttons">
+                        <button class="join-button">Join</button>
+                        <a href="#" class="other-actions-button">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-title">Sample Post Title 2</div>
+                <div class="post-content">
+                    Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt.
+                </div>
+                <div class="post-footer">
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/upvote.png" alt="Right Icon">
+                            20
+                            <img src="pics/downvote.png" alt="Right Icon">
+                        </div>
+                        </button>
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/Comment icon.png" alt="Right Icon">
+                            67
+                        </div>
+                        </button>
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/Share icon.png" alt="Right Icon">
+                            Share
+                        </div>
+                        </button>
+                </div>
+            </div>
+        </div> 
 
     <aside>
         <h2>POPULAR COMMUNITIES</h2>
@@ -273,10 +393,24 @@
                     <p>46,000 members</p>
                 </div>
             </li>
+            <li>
+                <img src="pics/userpfp.png" class="icon-container-side">
+                <div>
+                    <strong>r/sanrio</strong>
+                    <p>46,000 members</p>
+                </div>
+            </li>
+            <li>
+                <img src="pics/userpfp.png" class="icon-container-side">
+                <div>
+                    <strong>r/sanrio</strong>
+                    <p>46,000 members</p>
+                </div>
+            </li>
             <!-- Add more communities as needed -->
           </ul>
           <p class="see-more-aside">See more</p>
       </aside>
-
+<script src="script.js"></script>
 </body>
 </html>
