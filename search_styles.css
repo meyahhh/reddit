@@ -402,6 +402,7 @@ aside {
     height: 40px; /* Adjust the height of the icon as needed */
     margin-right: 8px; /* Adjust the margin between icon and text */
     margin-top: -2px;
+    border-radius: 50%;
 }
 
   aside h2{
