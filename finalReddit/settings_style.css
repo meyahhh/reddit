@@ -1,0 +1,434 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: -10px;
+    border-bottom: 1px solid rgb(235, 232, 232);
+
+}
+
+.logo img {
+    max-width: 100px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    margin-right: 10px;
+    padding-right: 100px;
+}
+
+.left-align {
+     margin-left: 0;
+
+}
+
+/* search button */
+
+.search-label {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-70%);
+    color: #B6B6B6; /* Adjust the color as needed */
+    z-index: 10; /* Ensure label is above other elements */
+}
+
+.round {
+    background-color: #EAEDEF;
+    width: 800px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    margin: 0;
+}
+
+.corner {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: url('pics/20x20in\ design.png') no-repeat; /* Replace 'search-icon.svg' with the path to your search icon image */
+    background-size: cover; /* Adjust the size as needed */
+}
+
+.search {
+    position: relative;
+    width: 700px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+/* end search button */
+
+/* right side buttons */
+
+.header-buttons {
+    width: 250px;
+    height: 50px;
+    padding-left: 200px;
+    display: flex;
+    justify-content:space-around;
+    margin: 5px; /* Adjust margin as needed */
+}
+
+.GetApp {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #EAEDEF;
+    border: none;
+    padding: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-containerqr{
+    display: flex;
+    align-items: center;
+}
+
+.icon-containerqr img {
+    width: 20px; /* Adjust the width of the icon as needed */
+    height: 20px; /* Adjust the height of the icon as needed */
+    margin-right: 8px; /* Adjust the margin between icon and text */
+}
+
+
+.LogIn {
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #D93A00;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    line-height: 1; /* Adjust line-height to vertically center text */
+}
+
+.ThreeDots {
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    overflow: hidden; /* Hide overflow for dots */
+    background-color: #EAEDEF; /* Background color for the button */
+    /* Flexbox styles to center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pseudo-elements for the dots */
+.ThreeDots::before,
+.ThreeDots::after {
+    content: '\2026'; /* Unicode character for ellipsis (three dots) */
+    font-size: 25px; /* Adjust the size of the dots */
+    color: #000; /* Adjust the color of the dots */
+    position: absolute;
+    top: -1px;
+}
+
+.divider {
+    height: 1px;
+    margin: 10px 0;
+    background-color: #E5E5E5;
+}
+
+
+/*~~~~~~~~Settings~~~~~~~~~~~*/
+
+.settingsContainer {
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-left: 50px;
+    padding: 20px;
+    margin-top: 80px;
+    /* border: 1px solid #ccc; */
+}
+.settingsHeader {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.settings {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+/*Settings Navbar*/
+.settingsNav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid rgb(235, 232, 232);
+    padding-bottom: 19px;
+}
+.settingsNav li {
+    display: inline; /* Change from inline-block to inline */
+    margin-right: 40px;
+}
+.settingsNav a {
+    position: relative;
+    text-decoration: none;
+    color: rgb(107, 105, 105);
+    font-size: 13px;
+    font-weight: bold;
+}
+.settingsNav a:hover {
+    position: sticky;
+    font-weight: bold;
+    color: black;
+}
+
+/*Settings Contents*/
+.settingsContents {
+    max-width: 730px;
+    margin: 20px auto;
+    margin-left: 0px;
+    padding: 0px;
+    margin-top: 30px;
+}
+
+
+/* Account Settings*/
+
+.innerContainer h6 {
+    color: rgb(107, 105, 105);
+    margin-bottom: 40px;
+    border-bottom: 1px solid rgb(235, 232, 232);
+    padding-bottom: 8px;
+    font-size: 10px;
+    flex: 1;
+
+}
+
+
+/*~~~Buttons~~~*/
+
+/*for squircle buttons*/
+.squircle_bttn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+.squircle_button_content h7 {
+    flex: 1;
+    font-size: 16px;
+    color:#000;
+  }
+.squircle_button_content p {
+    font-size: 11.5px;
+    color: rgb(107, 105, 105);
+    margin-top: 5px;
+  }  
+.squircle_button {
+    padding: 8px 18px;
+    background-color: white; /* Example: Set a background color */
+    color: rgb(6, 94, 209); /* Example: Set text color */
+    border-width: thin;
+    border-color: rgb(6, 94, 209);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+/*selection button*/
+.selection_bttn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.selection_button_content h7 {
+    flex: 1;
+    font-size: 16px;
+    color:#000;
+}
+.selection_button_content p {
+    font-size: 11.5px;
+    color: rgb(107, 105, 105);
+    margin-top: 5px;
+} 
+.selection_button {
+    display: inline-block;
+    padding: 5px; /* Adjust padding for spacing */
+    border: none;
+    border-radius: 5px;
+}
+.selection_button img {
+    display: block;
+    width: auto; /* Example: Set image width */
+    height: auto; /* Maintain aspect ratio */
+} 
+
+/*selection2 button*/
+.selection2_bttn {
+    justify-content: left;
+    padding: 10px;
+}
+.selection2_button_content h7 {
+    flex: 1;
+    font-size: 16px;
+    color:#000;
+}
+.selection2_button_content a {
+    color: rgb(255, 72, 0);
+}
+.selection2_button_content aa {
+    color: rgb(6, 94, 209);
+}
+.selection2_button_content p {
+    font-size: 11.5px;
+    color: rgb(107, 105, 105);
+    margin-top: 5px;
+} 
+.selection2_button {
+    display: inline-block;
+    padding: 5px; /* Adjust padding for spacing */
+    border: none;
+    border-radius: 5px;
+}
+.selection2_button img {
+    display: block;
+    width: auto; /* Example: Set image width */
+    height: auto; /* Maintain aspect ratio */
+} 
+
+/*image buttons*/
+.image_bttn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.image_button_content h7 {
+    flex: 1;
+    font-size: 16px;
+    color:#000;
+}
+.image_button_content p {
+    font-size: 11.5px;
+    color: rgb(107, 105, 105);
+    margin-top: 5px;
+}
+.image_button_content aaa {
+    font-size: 11.5px;
+    color: rgb(6, 94, 209);
+    margin-top: 5px;
+}  
+.image_button {
+    display: inline-block;
+    padding: 5px; /* Adjust padding for spacing */
+    border: none;
+    border-radius: 5px;
+}
+.image_button img {
+    display: block;
+    width: auto; /* Example: Set image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.image2_bttn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.image2_button_content h7 {
+    flex: 1;
+    font-size: 16px;
+    color:#000;
+}
+.image2_button_content p {
+    font-size: 11.5px;
+    color: rgb(107, 105, 105);
+    margin-top: 5px;
+} 
+.image2_button {
+    text-align: left;
+    padding: 0px;
+}
+.image2_button img {
+    text-align: left;
+    padding: 0px;
+    display: block;
+    width: auto; /* Example: Set image width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+
+
+
+/*~~Textfield~~*/
+.textfield {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.textfield_content h7 {
+    flex: 1;
+    font-size: 16px;
+    color:#000;
+}
+.textfield_content p {
+    font-size: 11.5px;
+    color: rgb(107, 105, 105);
+    margin-top: 5px;
+}
+.textbox {
+    text-align: left;
+    padding: 0px;
+    
+  }
+.textbox input {
+    padding: 10px;
+    border: 1px solid rgb(235, 232, 232);
+    border-radius: 5px;
+    width: 700px; /* Adjust width */
+    height: 25px; /* Adjust height */
+}
+.textbox input:focus {
+    border-color: black; /* Change border color on focus */
+    outline: none; /* Remove default focus outline */
+    border-width: 2px;
+}  

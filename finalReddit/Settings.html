@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="settings_style.css">
+    <script>
+      function disableLink(event) {
+        event.preventDefault(); // Prevent the default action
+      }
+    </script>
+</head>
+<header>
+  <div class="logo">
+      <img src="pics/Reddit Logo.svg" class="left-align"alt="Your Logo">
+  </div>
+  <div class="search">
+      <label for="search" class="search-label">Search Reddit</label>
+      <input type="text" name="search" class="round" />
+      <input type="submit" class="corner" value="" />
+  </div>
+  <div class="header-buttons">
+      <button class="GetApp"> 
+          <div class="icon-containerqr">
+              <img src="pics/Qr code.png" alt="Left Icon"> <!-- Replace "left-icon.png" with the path to your left icon -->
+              Get App
+            </div>
+          </button>
+      <a href="#"  class="LogIn">Log In</a>
+      <a href="#" class="ThreeDots"></a>
+  </div>
+</header>
+<div class="divider"></div> <!-- Divider -->
+
+<body>
+  <div class="settingsContainer">
+    <div class="settings">
+      <div class="settingsHeader">
+        <div class="User_Settings">User Settings</div>
+      </div>
+      <br>
+      <nav class="settingsNav">
+        <ul>
+          <li><a href="Settings.html">Account</a></li>
+          <li><a href="Profile_settings.html">Profile</a></li>
+          <li><a href="Safety&Privacy.html">Safety & Privacy</a></li>
+          <li><a href="FeedSettings.html">Feed Settings</a></li>
+          <li><a href="Notifications.html">Notifications</a></li>
+          <li><a href="Subscriptions.html">Subscriptions</a></li>
+          <li><a href="Chat&Messaging.html">Chat & Messaging</a></li>
+        </ul>
+      </nav>
+      <br>
+      <div class="settingsContents">
+        <section id="Account">
+          <h3>Account Settings</h3>
+          <br>
+          <div class="accPreferences">
+            <div class="innerContainer">
+              <h6>ACCOUNT PREFERENCES</h6>
+              <div class="squircle_bttn">
+                <div class="squircle_button_content">
+                  <h7>Email Address</h7>
+                  <p>Missing email, please update to secure your account</p>
+                </div>
+                <button class="squircle_button">Change</button>
+              </div>
+              <div class="selection_bttn">
+                <div class="selection_button_content">
+                  <h7>Gender</h7>
+                  <p>This information may be used to improve your recommendations and ads.</p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="selection_button"><img src="pics/Account Settings/selection bar.png"></a>
+              </div>
+              <div class="selection2_bttn">
+                <div class="selection2_button_content">
+                  <h7>Display Language<a> (beta)</a></h7>
+                  <p>Select the language you'd like to experience the Reddit interface in. 
+                    Note that this won't change the language of user-generated content and that this feature is
+                     still in development so translations and UI are still under review</p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="selection_button2"><img src="pics/Account Settings/selection bar2.png"></a>
+              </div>
+              <br>
+              <div class="squircle_bttn">
+                <div class="squircle_button_content">
+                  <h7>Content languages</h7>
+                  <p>Add languages you’d like to see posts, community recommendations, and other content in</p>
+                </div>
+                <button class="squircle_button">Change</button>
+              </div>
+              <div class="selection2_bttn">
+                <div class="selection2_button_content">
+                  <h7>Location Customization</h7>
+                  <p>Specify a location to customize your recommendations and feed. Reddit does not track your precise geolocation data. <aa>learn more</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="selection_button2"><img src="pics/Account Settings/selection bar3.png"></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="connectAcc">
+            <div class="innerContainer">
+              <h6>CONNECTED ACCOUNTS</h6>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Connect to Twitter</h7>
+                  <p>Connect a Twitter account to enable the choice to tweet your new posts and display a link on your profile. 
+                    We will never post to Twitter without your permission.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/twitter button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Connect to Apple</h7>
+                  <p>Connect account to log in to Reddit with Apple</p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/apple button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Connect to Google</h7>
+                  <p>Connect account to log in to Reddit with Google</p>
+                </div>
+                <a href="#" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/disconnect button.png"></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="betaTest">
+            <div class="innerContainer">
+              <h6>BETA TEST</h6>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Opt into beta tests</h7>
+                  <p>See the newest features from Reddit and join the r/beta community</p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/offSwitch button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Social links (5 max)</h7>
+                  <p>People who visit your profile will see your social links</p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/offSwitch button.png"></a>
+              </div>
+            </div>
+          </div>
+          <br>
+          <div class="deleteAcc">
+            <div class="innerContainer">
+              <h6>DELETE ACCOUNT</h6>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/deleteAcc button.png"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

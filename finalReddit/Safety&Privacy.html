@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="settings_style.css">
+    <script>
+      function disableLink(event) {
+        event.preventDefault(); // Prevent the default action
+      }
+    </script>
+</head>
+<header>
+  <div class="logo">
+      <img src="pics/Reddit Logo.svg" class="left-align"alt="Your Logo">
+  </div>
+  <div class="search">
+      <label for="search" class="search-label">Search Reddit</label>
+      <input type="text" name="search" class="round" />
+      <input type="submit" class="corner" value="" />
+  </div>
+  <div class="header-buttons">
+      <button class="GetApp"> 
+          <div class="icon-containerqr">
+              <img src="pics/Qr code.png" alt="Left Icon"> <!-- Replace "left-icon.png" with the path to your left icon -->
+              Get App
+            </div>
+          </button>
+      <a href="#"  class="LogIn">Log In</a>
+      <a href="#" class="ThreeDots"></a>
+  </div>
+</header>
+<div class="divider"></div> <!-- Divider -->
+
+<body>
+  <div class="settingsContainer">
+    <div class="settings">
+      <div class="settingsHeader">
+        <div class="User_Settings">User Settings</div>
+      </div>
+      <br>
+      <nav class="settingsNav">
+        <ul>
+          <li><a href="Settings.html">Account</a></li>
+          <li><a href="Profile_settings.html">Profile</a></li>
+          <li><a href="Safety&Privacy.html">Safety & Privacy</a></li>
+          <li><a href="FeedSettings.html">Feed Settings</a></li>
+          <li><a href="Notifications.html">Notifications</a></li>
+          <li><a href="Subscriptions.html">Subscriptions</a></li>
+          <li><a href="Chat&Messaging.html">Chat & Messaging</a></li>
+        </ul>
+      </nav>
+      <br>
+      <div class="settingsContents">
+        <section>
+          <h3>Safety & Privacy</h3>
+          <div class="innerContainer">
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <p>Manage how we use data to personalize your Reddit experience, 
+                  and control how other redditors interact with you. To learn more, 
+                  visit our <aaa>Privacy & Security FAQs.</aaa></p>
+              </div>
+            </div>
+            <h6>SAFETY</h6>
+            <div class="textfield">
+              <div class="textfield_content">
+                <h7>People You’ve Blocked</h7>
+                <p>Blocked people can’t send you chat requests or private messages.</p>
+                <div class="textbox">
+                  <input type="text" placeholder="BLOCK NEW USER">
+                </div>
+              </div>
+            </div>
+            <div class="textfield">
+              <div class="textfield_content">
+                <h7>Communities You've Muted</h7>
+                <p>Posts from muted communities won't show up in your feeds or recommendations.</p>
+                <div class="textbox">
+                  <input type="text" placeholder="MUTE NEW COMMUNITY">
+                </div>
+              </div>
+            </div>
+            <br>
+            <h6>PRIVACY</h6>
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <h7>Show up in search results</h7>
+                <p>Allow search engines like Google to link to your profile in their search results.</aa></p>
+              </div>
+              <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+            </div>
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <h7>Personalize ads on Reddit based on information and activity from our partners.</h7>
+                <p>Allow us to use information from our partners to show you better ads on Reddit.</aa></p>
+              </div>
+              <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+            </div>
+            <br>
+            <h6>SENSITIVE ADVERTISING CATEGORIES</h6>
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <h7>Alcohol</h7>
+                <p>Allowed</aa></p>
+              </div>
+              <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+            </div>
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <h7>Dating</h7>
+                <p>Allowed</aa></p>
+              </div>
+              <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+            </div>
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <h7>Gambling</h7>
+                <p>Allowed</aa></p>
+              </div>
+              <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+            </div>
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <h7>Pregnancy and parenting</h7>
+                <p>Allowed</aa></p>
+              </div>
+              <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+            </div>
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <h7>Weight loss</h7>
+                <p>Allowed</aa></p>
+              </div>
+              <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+            </div>
+            <h6>ADVANCE SECURITY</h6>
+            <div class="image_bttn">
+              <div class="image_button_content">
+                <h7>Use two-factor authentication</h7>
+                <p>Help protect your account (even if someone gets your password) by requiring a verification code and a password to log in.</aa></p>
+              </div>
+              <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/offSwitch button.png"></a>
+            </div>
+            <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/thirdParty button.png"></a>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
