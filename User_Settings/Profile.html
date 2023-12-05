@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function disableLink(event) {
+        event.preventDefault(); // Prevent the default action
+      }
+    </script>
+</head>
+<header>
+  <div class="logo">
+      <img src="pics/Reddit Logo.svg" class="left-align"alt="Your Logo">
+  </div>
+  <div class="search">
+      <label for="search" class="search-label">Search Reddit</label>
+      <input type="text" name="search" class="round" />
+      <input type="submit" class="corner" value="" />
+  </div>
+  <div class="header-buttons">
+      <button class="GetApp"> 
+          <div class="icon-containerqr">
+              <img src="pics/Qr code.png" alt="Left Icon"> <!-- Replace "left-icon.png" with the path to your left icon -->
+              Get App
+            </div>
+          </button>
+      <a href="#"  class="LogIn">Log In</a>
+      <a href="#" class="ThreeDots"></a>
+  </div>
+</header>
+<div class="divider"></div> <!-- Divider -->
+
+<body>
+  <div class="settingsContainer">
+    <div class="settings">
+      <div class="settingsHeader">
+        <div class="User_Settings">User Settings</div>
+      </div>
+      <br>
+      <nav class="settingsNav">
+        <ul>
+          <li><a href="Settings.html">Account</a></li>
+          <li><a href="Profile.html">Profile</a></li>
+          <li><a href="Safety&Privacy.html">Safety & Privacy</a></li>
+          <li><a href="FeedSettings.html">Feed Settings</a></li>
+          <li><a href="Notifications.html">Notifications</a></li>
+          <li><a href="Subscriptions.html">Subscriptions</a></li>
+          <li><a href="Chat&Messaging.html">Chat & Messaging</a></li>
+        </ul>
+      </nav>
+      <br>
+      <div class="settingsContents">
+        <section>
+          <h3>Customize profile</h3>
+          <br>
+          <div class="profileInfo">
+            <div class="innerContainer">
+              <h6>PROFILE INFORMATION</h6>
+              <div class="textfield">
+                <div class="textfield_content">
+                  <h7>Display name (optional)</h7>
+                  <p>Set a display name. This does not change your username.</p>
+                  <div class="textbox">
+                    <input type="text" placeholder="Display name (optional)">
+                  </div>
+                </div>
+              </div>
+              <div class="textfield">
+                <div class="textfield_content">
+                  <h7>About (optional)</h7>
+                  <p>A brief description of yourself shown on your profile.</p>
+                  <div class="textbox">
+                    <input type="text" placeholder="About (optional)">
+                  </div>
+                </div>
+              </div>
+              <div class="image2_bttn">
+                <div class="image2_button_content">
+                  <h7>Social links (5 max)</h7>
+                  <p>People who visit your profile will see your social links.</p>
+                  <div class="image2_button">
+                    <a href="" onclick="disableLink(event)" class="image2_button"><img src="pics/Account Settings/social link button.png"></a>
+                  </div>
+                </div>
+              </div>
+              <br>
+              <div class="images">
+                <div class="innerContainer">
+                  <h6>IMAGES</h6>
+                  <div class="image2_bttn">
+                    <div class="image2_button_content">
+                      <h7>Avatar and banner image</h7>
+                      <p>Images must be .png or .jpg format</p>
+                      <div class="image2_button">
+                        <a href="" onclick="disableLink(event)" class="image2_button"><img src="pics/Account Settings/dragNdrop image.png"></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="profileMod">
+                <div class="innerContainer">
+                  <h6>PROFILE MODERATION</h6>
+                  <h7>For moderation tools please visit our <a href="#" onclick="disableLink(event)">Profile Moderation page</a></h7>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

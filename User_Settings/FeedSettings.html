@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+      function disableLink(event) {
+        event.preventDefault(); // Prevent the default action
+      }
+    </script>
+</head>
+<header>
+  <div class="logo">
+      <img src="pics/Reddit Logo.svg" class="left-align"alt="Your Logo">
+  </div>
+  <div class="search">
+      <label for="search" class="search-label">Search Reddit</label>
+      <input type="text" name="search" class="round" />
+      <input type="submit" class="corner" value="" />
+  </div>
+  <div class="header-buttons">
+      <button class="GetApp"> 
+          <div class="icon-containerqr">
+              <img src="pics/Qr code.png" alt="Left Icon"> <!-- Replace "left-icon.png" with the path to your left icon -->
+              Get App
+            </div>
+          </button>
+      <a href="#"  class="LogIn">Log In</a>
+      <a href="#" class="ThreeDots"></a>
+  </div>
+</header>
+<div class="divider"></div> <!-- Divider -->
+
+<body>
+  <div class="settingsContainer">
+    <div class="settings">
+      <div class="settingsHeader">
+        <div class="User_Settings">User Settings</div>
+      </div>
+      <br>
+      <nav class="settingsNav">
+        <ul>
+          <li><a href="Settings.html">Account</a></li>
+          <li><a href="Profile.html">Profile</a></li>
+          <li><a href="Safety&Privacy.html">Safety & Privacy</a></li>
+          <li><a href="FeedSettings.html">Feed Settings</a></li>
+          <li><a href="Notifications.html">Notifications</a></li>
+          <li><a href="Subscriptions.html">Subscriptions</a></li>
+          <li><a href="Chat&Messaging.html">Chat & Messaging</a></li>
+        </ul>
+      </nav>
+      <br>
+      <div class="settingsContents">
+        <section>
+          <h3>Feed settings</h3>
+          <br>
+          <div class="contentPref">
+            <div class="innerContainer">
+              <h6>CONTENT PREFERENCES</h6>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Show mature (18+) content</h7>
+                  <p>See NSFW (Not Safe for Work) mature and adult images, videos, written content, 
+                    and other media in your Reddit feeds and search results.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/offSwitch button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Enable home feed recommendations</h7>
+                  <p>Allow us to introduce recommended posts in your home feed.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Autoplay media</h7>
+                  <p>Play videos and gifs automatically when in the viewport.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Reduce Animations</h7>
+                  <p>Reduce animations on posts, comments, and feeds.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/offSwitch button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Community themes</h7>
+                  <p>Use custom themes for all communities. You can also turn this off on a per community basis.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/onSwitch button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Community content sort</h7>
+                  <p>Choose how you would like content organized in communities you visit. This will not affect global feeds such as Home, or Popular.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/hot button.png"></a>
+              </div>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Open posts in new tab</h7>
+                  <p>Enable to always open posts in a new tab.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/offSwitch button.png"></a>
+              </div>
+              <br>
+              <h6>POST PREFERENCES</h6>
+              <div class="image_bttn">
+                <div class="image_button_content">
+                  <h7>Default to markdown</h7>
+                  <p>When posting, your input will default to markdown text instead of fancy pants.</aa></p>
+                </div>
+                <a href="" onclick="disableLink(event)" class="image_button"><img src="pics/Account Settings/offSwitch button.png"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
