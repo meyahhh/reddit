@@ -383,20 +383,27 @@ width: 100%;
     font-size: 18px;
     font-weight: 500;
 }
+.post-title-body {
+    font-size: 14px;
+    color: #333; /* Adjust the color as needed */
+    margin-top: 8px; /* Adjust the margin as needed */
+}
+
 .post-image {
    
-    object-fit: contain;
+    object-fit: fill;
     width: 100%;
-    height: auto;
-    max-height: 510px;
+    height: 100%;
+   
 }
 .post-image-picture {
     
-   max-width: 510px;
-    object-fit: contain;
+  
+    object-fit: fill;
     width: 100%;
-    height: auto;
+    height:100%;
 }
+
 .profile-image {
 
     min-width: 25px;
