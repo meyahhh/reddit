@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="populars_styles.css">
+    <title>Reddit</title>
+</head>
+<header>
+    <div class="logo">
+        <img src="pics/Reddit Logo.svg" class="left-align"alt="Your Logo">
+    </div>
+    <div class="search">
+        <form onsubmit="redirectPage(event)">
+            <label for="search" class="search-label">Search Reddit</label>
+            <input type="text" name="search" class="round" />
+            <input type="submit" class="corner" value="" />
+        </form>
+    </div>
+    <div class="header-buttons">
+        <button class="GetApp"> 
+            <div class="icon-containerqr">
+                <img src="pics/Qr code.png" alt="Left Icon"> <!-- Replace "left-icon.png" with the path to your left icon -->
+                Get App
+              </div>
+            </button>
+        <a href="#"  class="LogIn">Log In</a>
+        <a href="#" class="ThreeDots"></a>
+    </div>
+</header>
+<body>
+    <div class="sidenav">
+        <a href="#" class="Home">
+            <div class="icon-container">
+              <img src="pics/Home icon.png" alt="Left Icon"> <!-- Replace "left-icon.png" with the path to your left icon -->
+              Home
+              <!-- <img src="/pics/up-arrow.png" alt="Right Icon"> Replace "right-icon.png" with the path to your right icon -->
+            </div>
+          </a>
+        <a href="#" class="Popular">
+            <div class="icon-container">
+                <img src="pics/popular.png" alt="Left Icon">
+                Popular
+            </div>
+        </a>
+        <div class="divider"></div> <!-- Divider -->
+        <a href="#" class="Topics">
+            <div class="upicon-container">
+                Topics
+                <img src="pics/up-arrow.png" alt="Right Icon">
+            </div>
+            </a>
+        <a href="#" class="Gaming">
+            <div class="icon-container">
+                <img src="pics/Gaming.png" alt="Right Icon">
+                Gaming
+            </div>
+            </a>
+        <a href="#" class="Sports">
+            <div class="icon-container">
+                <img src="pics/Sports.png" alt="Right Icon">
+                Sports
+            </div>
+            </a>
+        <a href="#" class="Business">
+            <div class="icon-container">
+                <img src="pics/business.png" alt="Right Icon">
+                Business
+            </div>
+            </a>
+        <a href="#" class="Crypto">
+            <div class="icon-container">
+                <img src="pics/Crypto Bitcoin.png" alt="Right Icon">
+                Crypto
+            </div>
+            </a>
+        <a href="#" class="Celebrity">
+            <div class="icon-container">
+                <img src="pics/Celebrity icon.png" alt="Right Icon">
+                Celebrity
+            </div>
+            </a>
+        <a href="#" class="see-more">See more</a>
+        <div class="divider"></div> <!-- Divider -->
+        <a href="#" class="Resources">
+           <div class="upicon-container2">
+                Resources
+                <img src="pics/up-arrow.png" alt="Right Icon">
+            </div>
+            </a>
+        <a href="#" class="Advertise">
+            <div class="icon-container">
+                <img src="pics/advertise.png" alt="Right Icon">
+                Advertise
+            </div>
+            </a>
+        <a href="#" class="Help">
+            <div class="icon-container">
+                <img src="pics/help.png" alt="Right Icon">
+                Help
+            </div>
+            </a>
+        <a href="#" class="Blog">
+            <div class="icon-container">
+                <img src="pics/blog.png" alt="Right Icon">
+                Blog
+            </div>
+            </a>
+        <a href="#" class="Careers">
+           <div class="icon-container">
+                <img src="pics/Wrench icon.png" alt="Right Icon">
+                Careers
+            </div>
+            </a>
+        <a href="#" class="Press">
+            <div class="icon-container">
+                <img src="pics/press.png" alt="Right Icon">
+                Press
+            </div>
+            </a>
+        <a href="#" class="see-more">See more</a>
+        <p>Reddit, Inc. © 2023. All rights reserved.</p>
+    </div>
+
+    <div class="divider"></div> <!-- Divider -->
+    <div class="grid-container">
+        <div class="grid-item">
+            <img src="stock/stockimg1.jpeg" alt="Image 1">
+            <div class="overlay-text">
+                <h4>Ashanti & Nelly expe...</h4>
+                <p>Ashanti is pregnant, expecting her 1s...</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="stock/stockimg2 copy.png" alt="Image 2">
+            <div class="overlay-text">
+                <h4>Monday Night Football</h4>
+                <p>It's Game dey, Let's go!!!</p>
+            </div>    
+        </div>
+        <div class="grid-item">
+            <img src="stock/stockimg3.png" alt="Image 3">
+            <div class="overlay-text">
+                <h4>Fashion Awards 2023</h4>
+                <p>Fashion Awards 2023 in London</p>
+            </div>
+        </div>
+        <div class="grid-item">
+            <img src="stock/stockimg4.png" alt="Image 3">
+            <div class="overlay-text">
+                <h4>MLB Winter Meetings</h4>
+                <p>[Heyman]: Ohtani and Yamamoto not...</p>
+            </div>
+        </div>
+        
+        <!-- Add more grid items as needed -->
+    </div>
+    <div class="post-container">
+        <div class="divider"></div> <!-- Divider -->
+        <div class="post">
+            <div class="post-header">
+                <div class="pfp-container">
+                    <!-- Add your profile picture here -->
+                    <img src="pics/userpfp.png" alt="Profile Picture">
+                </div>
+                <div class="user-info">r/adultingph</div>
+                <span class="dot"></span>
+                <div class="post-meta">2 hours ago</div>
+                <div class="post-buttons">
+                    <button class="join-button">Join</button>
+                    <a href="#" class="other-actions-button">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="post-title">Huy, wag kayong ganito, please.</div>
+            <div class="post-content">
+                I recently received a dm from a friend sa work. We're still in each other's contact although almost no interaction kase she's reporting sa office while ako is work from home setup pa rin.
+                <br>
+                <br>
+                Sabi sa text, "Musta na?". I immediately thought na ay, baka i-invite ako neto to eat outside. Pero I was wrong, after ng medyo mahaba habang ritual, kumustahan and eme eme, may pa "Pwede pautang?" na.
+                <br>
+                <br>
+                I replied right away na di pwede kase nakabudget na pera ko tas one week pa before our next pay. But she insisted na utangin nya daw one week allowance ko which is cash na sya. She even asked to meet up para maibigay ko ang pera or pwede din daw ipa-Cebuana nalang. I stayed firm sa sagot ko kase anteh, ayokong magpautang lalo na at di kami nagkikita madalas.
+                <br>
+                <br>
+                Me who is trying to help said na baka pwede sya umutang sa Gcash kase sakto may nakita akong TikTok about dun. Di pa ako nakautang sa Gcash pero malay mo madali lang. So ayun, usap kami slight about sa Gcash loan and then later she said, "Pwede ikaw umutang for me kase may utang pa ako dun eh."
+                <br>
+                <br>
+                Dun na akon narindi, ang kulet ni ate ah. Block ko na ba maski magkatrabaho pa kami? 😭
+                <br>
+                <br>
+            </div>
+            <div class="post-footer">
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/upvote.png" alt="Right Icon">
+                        20
+                        <img src="pics/downvote.png" alt="Right Icon">
+                    </div>
+                    </button>
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/Comment icon.png" alt="Right Icon">
+                        67
+                    </div>
+                    </button>
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/Share icon.png" alt="Right Icon">
+                        Share
+                    </div>
+                    </button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="post-container1">
+        <div class="divider"></div> <!-- Divider -->
+        <div class="post">
+            <div class="post-header">
+                <div class="pfp-container">
+                    <!-- Add your profile picture here -->
+                    <img src="stock/com1.jpeg" alt="Profile Picture">
+                </div>
+                <div class="user-info"> r/TimeTravelersAnonymous</div>
+                <span class="dot"></span>
+                <div class="post-meta">3 days ago</div>
+                <div class="post-buttons">
+                    <button class="join-button">Join</button>
+                    <a href="#" class="other-actions-button">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="post-title">Left my smartphone in the 1800s, need urgent advice!</div>
+            <div class="post-content">
+                So, fellow time travelers, I find myself in a bit of a temporal bind. During my recent escapade to the 1800s, I, regrettably, left my smartphone behind. Now, I'm grappling with the possibility of a time-travel paradox. How can I rectify this situation without causing a ripple effect through history? Urgent advice needed, please!
+            </div>
+            <div class="post-footer">
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/upvote.png" alt="Right Icon">
+                        5
+                        <img src="pics/downvote.png" alt="Right Icon">
+                    </div>
+                    </button>
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/Comment icon.png" alt="Right Icon">
+                        6
+                    </div>
+                    </button>
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/Share icon.png" alt="Right Icon">
+                        Share
+                    </div>
+                    </button>
+            </div>
+        </div>
+    </div> 
+     
+    <div class="post-container1">
+        <div class="divider"></div> <!-- Divider -->
+        <div class="post">
+            <div class="post-header">
+                <div class="pfp-container">
+                    <!-- Add your profile picture here -->
+                    <img src="stock/com2.jpeg" alt="Profile Picture">
+                </div>
+                <div class="user-info">r/PetPsychics</div>
+                <span class="dot"></span>
+                <div class="post-meta">10 hours ago</div>
+                <div class="post-buttons">
+                    <button class="join-button">Join</button>
+                    <a href="#" class="other-actions-button">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="post-title">Cat whispered 'buy more tuna</div>
+            <div class="post-content">
+                Hello, pet psychics! I had the most peculiar experience today with my feline friend. While lounging on the couch, my cat leaned in and whispered 'buy more tuna' in my ear. It was crystal clear, and now I'm left wondering if she's trying to convey something crucial. Any pet psychics out there who can help me decipher this mysterious message? This happened about 10 hours ago, and I'm eagerly awaiting your insights!
+            </div>
+            <div class="post-footer">
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/upvote.png" alt="Right Icon">
+                        98
+                        <img src="pics/downvote.png" alt="Right Icon">
+                    </div>
+                    </button>
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/Comment icon.png" alt="Right Icon">
+                        76
+                    </div>
+                    </button>
+                <button class="post-action-button">
+                    <div class="icon-container">
+                        <img src="pics/Share icon.png" alt="Right Icon">
+                        Share
+                    </div>
+                    </button>
+            </div>
+        </div>
+    </div> 
+        <!-- Add more posts as needed -->
+        <div class="post-container1">
+            <div class="divider"></div> <!-- Divider -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="pfp-container">
+                        <!-- Add your profile picture here -->
+                        <img src="stock/com3.jpeg" alt="Profile Picture">
+                    </div>
+                    <div class="user-info">r/ParallelUniverses</div>
+                    <span class="dot"></span>
+                    <div class="post-meta">1 week ago </div>
+                    <div class="post-buttons">
+                        <button class="join-button">Join</button>
+                        <a href="#" class="other-actions-button">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-title">Visited a universe where dogs rule - Share your stories! </div>
+                <div class="post-content">
+                    Hey fellow explorers of the multiverse! Just got back from a mind-bending adventure in a parallel universe where dogs are the dominant species. They have their own cities, governments, and, believe it or not, their own version of Reddit! I want to hear your similar experiences or any insights you might have on the nature of parallel worlds. This incredible journey happened about a week ago, and I can't wait to swap stories!               
+                 </div>
+                <div class="post-footer">
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/upvote.png" alt="Right Icon">
+                            56
+                            <img src="pics/downvote.png" alt="Right Icon">
+                        </div>
+                        </button>
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/Comment icon.png" alt="Right Icon">
+                            46
+                        </div>
+                        </button>
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/Share icon.png" alt="Right Icon">
+                            Share
+                        </div>
+                        </button>
+                </div>
+            </div>
+        </div> 
+
+        <div class="post-container1">
+            <div class="divider"></div> <!-- Divider -->
+            <div class="post">
+                <div class="post-header">
+                    <div class="pfp-container">
+                        <!-- Add your profile picture here -->
+                        <img src="stock/com4.jpeg" alt="Profile Picture">
+                    </div>
+                    <div class="user-info">r/AlienEncounters</div>
+                    <span class="dot"></span>
+                    <div class="post-meta">2 days ago</div>
+                    <div class="post-buttons">
+                        <button class="join-button">Join</button>
+                        <a href="#" class="other-actions-button">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="post-title">Found an alien cookbook at Area 51 - Foodies, help decode!</div>
+                <div class="post-content">
+                    Greetings, Earthlings! During a clandestine exploration of Area 51, I stumbled upon an extraterrestrial cookbook. The recipes are otherworldly, and I'm in dire need of some culinary assistance. Any food enthusiasts or codebreakers out there who can help me decode the alien gastronomic delights? This discovery occurred around 2 days ago, and time is of the essence!
+                </div>
+                <div class="post-footer">
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/upvote.png" alt="Right Icon">
+                            20
+                            <img src="pics/downvote.png" alt="Right Icon">
+                        </div>
+                        </button>
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/Comment icon.png" alt="Right Icon">
+                            67
+                        </div>
+                        </button>
+                    <button class="post-action-button">
+                        <div class="icon-container">
+                            <img src="pics/Share icon.png" alt="Right Icon">
+                            Share
+                        </div>
+                        </button>
+                </div>
+            </div>
+        </div> 
+
+    <aside>
+        <h2>POPULAR COMMUNITIES</h2>
+        <ul>
+            <li>
+                <img src="pics/userpfp.png" class="icon-container-side">
+                <div>
+                    <strong>r/adultingph</strong>
+                    <p>46,000 members</p>
+                </div>
+            </li>
+            <li>
+                <img src="stock/com1.jpeg" class="icon-container-side">
+                <div>
+                    <strong>r/sanrio</strong>
+                    <p>46,000 members</p>
+                </div>
+            </li>
+            <li>
+                <img src="stock/com2.jpeg" class="icon-container-side">
+                <div>
+                    <strong>r/TimeTravelersAnonymous</strong>
+                    <p>25,567 members</p>
+                </div>
+            </li>
+            <li>
+                <img src="stock/com3.jpeg" class="icon-container-side">
+                <div>
+                    <strong>r/PetPsychics</strong>
+                    <p>12,345 members</p>
+                </div>
+            </li>
+            <li>
+                <img src="stock/com4.jpeg" class="icon-container-side">
+                <div>
+                    <strong>r/ParallelUniverses</strong>
+                    <p>30,987 members</p>
+                </div>
+            </li>
+            <!-- Add more communities as needed -->
+          </ul>
+          <p class="see-more-aside">See more</p>
+      </aside>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,708 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: -10px;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    margin-right: 10px;
+    padding-right: 100px;
+}
+
+.left-align {
+     margin-left: 0;
+
+}
+
+/* search button */
+
+.search-label {
+    position: absolute;
+    top: 50%;
+    left: 50px;
+    transform: translateY(-70%);
+    color: #B6B6B6; /* Adjust the color as needed */
+    z-index: 10; /* Ensure label is above other elements */
+}
+
+.round {
+    background-color: #EAEDEF;
+    width: 800px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    margin: 0;
+}
+
+.corner {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    z-index: 10;
+    border-radius: 10px;
+    border: none;
+    background: url('pics/20x20in\ design.png') no-repeat; /* Replace 'search-icon.svg' with the path to your search icon image */
+    background-size: cover; /* Adjust the size as needed */
+}
+
+.search {
+    position: relative;
+    width: 700px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+/* end search button */
+
+/* right side buttons */
+
+.header-buttons {
+    width: 250px;
+    height: 50px;
+    padding-left: 200px;
+    display: flex;
+    justify-content:space-around;
+    margin: 5px; /* Adjust margin as needed */
+}
+
+.GetApp {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #EAEDEF;
+    border: none;
+    padding: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-containerqr{
+    display: flex;
+    align-items: center;
+}
+
+.icon-containerqr img {
+    width: 20px; /* Adjust the width of the icon as needed */
+    height: 20px; /* Adjust the height of the icon as needed */
+    margin-right: 8px; /* Adjust the margin between icon and text */
+}
+
+
+.LogIn {
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #D93A00;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    line-height: 1; /* Adjust line-height to vertically center text */
+}
+
+.ThreeDots {
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    overflow: hidden; /* Hide overflow for dots */
+    background-color: #EAEDEF; /* Background color for the button */
+    /* Flexbox styles to center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pseudo-elements for the dots */
+.ThreeDots::before,
+.ThreeDots::after {
+    content: '\2026'; /* Unicode character for ellipsis (three dots) */
+    font-size: 25px; /* Adjust the size of the dots */
+    color: #000; /* Adjust the color of the dots */
+    position: absolute;
+    top: -1px;
+}
+
+
+/* end right side buttons */
+/* end header */
+
+/* side nav bar  */
+
+.sidenav {
+    height: calc(100% - 80px); /* Adjust the height as needed */
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding-top: 20px; /* Add some padding at the top if needed */
+    margin-top: 80px; /* Adjusted to match the height of the header */
+    overflow-y:auto;
+    border-left: 1px solid #ffffff;
+}
+
+.sidenav a {
+    padding: 10px 15px 5px 40px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav p{
+    padding: 10px 15px;
+    padding-bottom: 10px;
+    font-size: 10px;
+}
+.content {
+    margin-left: 200px; /* Adjust the margin to match the width of the sidebar */
+    padding: 20px;
+    margin-top: 80px; /* Adjusted to match the height of the header */
+
+}
+
+/* divider  for the nav bar*/
+
+.divider {
+    height: 1px;
+    margin: 10px 0;
+    background-color: #E5E5E5;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-container img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 5px; /* Adjust the margin as needed */
+    margin-left: 5px;
+  }
+  
+  .upicon-container img{
+    width: 15px; /* Adjust the width as needed */
+    height: 15px; /* Adjust the height as needed */
+    margin-right: 5px; /* Adjust the margin as needed */
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+
+  .upicon-container2 img{
+    width: 15px; /* Adjust the width as needed */
+    height: 15px; /* Adjust the height as needed */
+    margin-right: 5px; /* Adjust the margin as needed */
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+ .see-more{
+    font-size: 5px; /* Adjust the font size for description text */
+    color: #555; /* Adjust the text color for description text */
+  }
+/* end side nav bar  */
+
+/* body  */
+
+/* .scroll-container {
+    padding-top: 90px;
+    padding-left: 200px;
+    width: 85%;
+    overflow-x: auto;
+    white-space: nowrap;
+} */
+
+/* .scroll-item {
+   
+    margin: 0;
+    width: 300px;
+    height: 200px;
+    display: inline-block;
+    margin-right: 0px; 
+    position: relative;
+} */
+
+/* img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0;
+} */
+
+/* .text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 10px;
+    font-size: 16px; 
+} */
+
+/* end :horizontal scroll */
+
+.post-container {
+    max-width: 750px;
+    margin: 20px auto;
+    margin-left: 250px;
+    padding: 20px;
+    margin-top: 80px;
+    padding-bottom: 0px;
+    /* border: 1px solid #ccc; */
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.pfp-container {
+    margin-right: 5px;
+}
+
+.pfp-container img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.user-info-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    font-weight: bold;
+}
+
+.dot {
+    width: 3px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 50%;
+    margin-right: 5px; /* Adjust margin for spacing */
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+
+.additional-info {
+    font-size: 12px; /* Adjust the font size as needed */
+    color: #777; /* Adjust the color as needed */
+}
+
+.post-meta {
+    color: #777;
+    margin-bottom: 12px;
+}
+
+.post-buttons {
+    margin-left: auto;
+}
+
+
+.post-title {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-content {
+    font-size: 16px;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #666;
+}
+
+.post-buttons {
+    margin-left: auto; /* Push post-buttons to the right */
+}
+
+.join-button,
+.other-actions-button {
+    padding: 8px 12px;
+    font-size: 12px;
+    background-color: #023584;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.other-actions-button {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Add padding for spacing */
+}
+
+.other-actions-button::before,
+.other-actions-button::after,
+.other-actions-button span,
+.other-actions-button .additional-dot {
+    content: '';
+    height: 4px;
+    width: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 0 2px; /* Adjust margin for spacing */
+}
+
+.post-action-button{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+}
+
+.options {
+    max-width: 750px;
+    margin-left: 250px;
+    padding: 0px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+}
+
+.sort-by {
+    font-size: 13px;
+    color: #7A8D92;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+
+.icon-sort {
+    display: flex;
+    align-items: center;
+    font-size: small;
+    font-weight: bold;
+  }
+
+  .icon-sort img {
+    width: 10px; /* Adjust the width as needed */
+    height: 10px; /* Adjust the height as needed */
+    margin-left: 5px; /* Adjust the margin as needed */
+  }
+
+.option {
+    display: flex;
+    gap: 10px;
+}
+
+.option-button {
+    padding: 8px 16px;
+    background-color: #ffffff;
+    color: #7A8D92;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    vertical-align: middle; /* Align the text vertically in the middle */
+    font-size: 15px;
+    border-radius: 15px;
+    line-height: 1.6;
+}
+
+.option-button:hover {
+    background-color: #D2DADD;
+}
+
+.add-button {
+    padding: 8px 16px;
+    margin-top: 0px;
+    margin-left: 250px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000000;
+    border: 1px solid #7A8D92; 
+    vertical-align: middle; /* Align the text vertically in the middle */
+    font-size: 15px;
+    line-height: 1.3;
+    display: flex;
+    align-items: center;
+
+}
+
+.plus{
+    font-size: 20px;
+    padding-right: 10px;;
+    font-weight: lighter;
+}
+
+/* comments  */
+
+.comment-container {
+    max-width: 750px;
+    margin-top: 0px ;
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+
+}
+
+.comment {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0px;
+}
+
+.user-info-comment {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.dot-comment {
+    width: 3px;
+    height: 3px;
+    background-color: #777;
+    border-radius: 50%;
+    margin-right: 5px; /* Adjust margin for spacing */
+    margin-left: 5px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+
+.comment-meta {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 12px;
+    margin-top: 10px;
+}
+
+.comment-buttons {
+    margin-left: auto;
+}
+
+.comment-content {
+    font-size: 15px;
+    font: weight 5px;
+    padding-left: 35px;
+}
+
+.comment-footer {
+    display: flex;
+    align-items: center;
+    margin-top: 0px; /* Adjust the negative margin to move it up */
+    margin-left: 30px;
+}
+
+.other-actions-button-comment {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color:#777;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 300;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px; /* Add padding for spacing */
+    margin-top: 3px;
+    margin-left: 3px;
+}
+
+.other-actions-button-comment::before,
+.other-actions-button-comment::after,
+.other-actions-button-comment span,
+.other-actions-button-comment .additional-dot {
+    content: '';
+    height: 3px;
+    width: 3px;
+    background-color: #777;
+    border-radius: 50%;
+    margin: 0 2px; /* Adjust margin for spacing */
+}
+
+.comment-action-button{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    background-color: white;
+   margin-top: 5px;
+}
+
+/* aside */
+
+aside {
+    width: 280px; /* Adjust the width as needed */
+    height: 230px;
+    border-radius: 15px;
+    background-color: #F9FAFA;
+    margin-left: 1100px;
+    margin-top: -1300px;
+    position: fixed;
+
+  }
+  .aside-header{
+      display: flex;
+      align-items: center;
+      padding: 10px;
+      padding-bottom:0px;
+  }
+  
+  .aside-description{
+      padding: 10px;
+      padding-bottom: 0px;
+  }
+
+  .join-button{
+      padding: 8px 12px;
+      font-size: 12px;
+      background-color: #023584;
+      color: #fff;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      height: 30px;
+      width: 60px;
+  }
+
+aside h4{
+    margin: 0px;
+}
+
+.small-desc{
+    color: #666;
+}
+
+.show-more{
+    font-size: small;
+    color: #023584;
+    text-align: center;
+    padding-bottom:5px;
+}
+
+.aside-footer{
+    display: flex;
+    padding-left: 10px;
+}
+
+.contain{
+    margin-right: 32px;
+    margin-top: 10px;
+}
+
+.light{
+    font-size: 12px;
+}
+  aside ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0px; /* Remove default padding for the list */
+  }
+
+  aside li {
+    margin-bottom: 10px; /* Adjust spacing between list items */
+    padding-left: 10px;
+    display: relative;
+    align-items: center;
+  }
+
+  .icon-container-side  {
+    width: 40px; /* Adjust the width of the icon as needed */
+    height: 40px; /* Adjust the height of the icon as needed */
+    margin-right: 8px; /* Adjust the margin between icon and text */
+    margin-top: -2px;
+    border-radius: 50%;
+}
+
+.side-rec-header,
+.side-rec-footer
+{
+    display: flex;
+    align-items: center;
+}
+
+.upvotes{
+    color: #666;
+    font-size: small;
+}
+
+
+  aside h2{
+    font-size: 18px; /* Adjust the font size for community names */
+    color: black; /* Adjust the text color for community names */
+    padding-right: 85px; 
+  }
+
+  aside strong {
+    font-size: 15px; /* Adjust the font size for community names */
+    color: #333; /* Adjust the text color for community names */
+  }
+
+  aside p {
+    font-size: 14px; /* Adjust the font size for description text */
+    color: #555; /* Adjust the text color for description text */
+    margin-top: 3px;
+  }
+
+  .see-more-aside{
+    font-size: 13px; /* Adjust the font size for description text */
+    color: #555; /* Adjust the text color for description text */
+    padding-left: 10px;
+  }
+
