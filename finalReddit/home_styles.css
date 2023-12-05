@@ -1,0 +1,518 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* header */
+header {
+    background-color: rgb(255, 255, 255);
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    margin-top: -10px;
+}
+
+.logo img {
+    max-width: 100px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    margin-right: 10px;
+    padding-right: 100px;
+}
+
+.left-align {
+     margin-left: 0;
+
+}
+
+/* search button */
+
+.search-label {
+    position: absolute;
+    top: 15px;
+    left: 10px;
+    transform: translateY(-70%);
+    color: #B6B6B6; /* Adjust the color as needed */
+    z-index: 10; /* Ensure label is above other elements */
+}
+
+.round {
+    background-color: #EAEDEF;
+    width: 800px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding: 5px 5px 5px 5px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    margin: 0;
+}
+
+.corner {
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    height: 25px;
+    width: 25px;
+    z-index: 10;
+    border-radius: 0px;
+    border: none;
+    z-index: 1;
+}
+
+.search {
+    position: relative;
+    width: 700px;
+    height: 50px;
+    margin-left: 50px;
+}
+
+/* end search button */
+
+/* right side buttons */
+
+.header-buttons {
+    width: 250px;
+    height: 50px;
+    padding-left: 200px;
+    display: flex;
+    justify-content:space-around;
+    margin: 5px; /* Adjust margin as needed */
+}
+
+.GetApp {
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #EAEDEF;
+    border: none;
+    padding: 5px;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-containerqr{
+    display: flex;
+    align-items: center;
+}
+
+.icon-containerqr img {
+    width: 20px; /* Adjust the width of the icon as needed */
+    height: 20px; /* Adjust the height of the icon as needed */
+    margin-right: 8px; /* Adjust the margin between icon and text */
+}
+
+
+.LogIn {
+    width: 25%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: #D93A00;
+    color: white;
+    font-size: smaller;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none; /* Remove underline */
+    line-height: 1; /* Adjust line-height to vertically center text */
+}
+
+.ThreeDots {
+    width: 20%;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    position: relative;
+    z-index: 5;
+    text-align: center;
+    overflow: hidden; /* Hide overflow for dots */
+    background-color: #EAEDEF; /* Background color for the button */
+    /* Flexbox styles to center content */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Pseudo-elements for the dots */
+.ThreeDots::before,
+.ThreeDots::after {
+    content: '\2026'; /* Unicode character for ellipsis (three dots) */
+    font-size: 25px; /* Adjust the size of the dots */
+    color: #000; /* Adjust the color of the dots */
+    position: absolute;
+    top: -1px;
+}
+
+
+/* end right side buttons */
+/* end header */
+
+/* side nav bar  */
+
+.sidenav {
+    height: calc(100% - 80px); /* Adjust the height as needed */
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+    padding-top: 20px; /* Add some padding at the top if needed */
+    margin-top: 80px; /* Adjusted to match the height of the header */
+    overflow-y:auto;
+    border-left: 1px solid #ffffff;
+}
+
+.sidenav a {
+    padding: 10px 15px 5px 40px;
+    text-decoration: none;
+    font-size: 15px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav p{
+    padding: 10px 15px;
+    padding-bottom: 10px;
+    font-size: 10px;
+}
+.content {
+    margin-left: 200px; /* Adjust the margin to match the width of the sidebar */
+    padding: 20px;
+    margin-top: 80px; /* Adjusted to match the height of the header */
+
+}
+
+/* divider  for the nav bar*/
+
+.divider {
+    height: 1px;
+    margin: 10px 0;
+    background-color: #E5E5E5;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+  }
+
+  .icon-container img {
+    width: 20px; /* Adjust the width as needed */
+    height: 20px; /* Adjust the height as needed */
+    margin-right: 10px; /* Adjust the margin as needed */
+    margin-left: 10px;
+  }
+  
+  .upicon-container img{
+    width: 15px; /* Adjust the width as needed */
+    height: 15px; /* Adjust the height as needed */
+    margin-right: 5px; /* Adjust the margin as needed */
+    margin-left: 40px;
+    margin-top: 5px;
+  }
+
+  .upicon-container2 img{
+    width: 15px; /* Adjust the width as needed */
+    height: 15px; /* Adjust the height as needed */
+    margin-right: 5px; /* Adjust the margin as needed */
+    margin-left: 15px;
+    margin-top: 5px;
+  }
+ .see-more{
+    font-size: 5px; /* Adjust the font size for description text */
+    color: #555; /* Adjust the text color for description text */
+  }
+/* end side nav bar  */
+
+/* body  */
+
+
+.post-container {
+    max-width: 750px;
+    margin: 20px auto;
+    margin-left: 250px;
+    padding: 20px;
+    margin-top: 100px;
+    padding-bottom: 0px;
+    /* border: 1px solid #ccc; */
+}
+
+.post-container1 {
+    max-width: 750px;
+    margin-top: 0px ;
+    margin-left: 250px;
+    padding: 20px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    /* margin-top: 100px; */
+    /* border: 1px solid #ccc; */
+}
+
+.post {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.post-header {
+    display: flex;
+    align-items: center;
+}
+
+.pfp-container img {
+    width: 30px; /* Adjust the size as needed */
+    height: 30px; /* Adjust the size as needed */
+    border-radius: 50%;
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.user-info,
+.dot {
+    margin-right: 5px; /* Adjust margin for spacing */
+}
+.user-info{
+    margin-left: 5px;
+}
+.dot {
+    width: 3px;
+    height: 3px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.post-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.post-title1 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Keeps the default text color */
+}
+.post-content {
+    font-size: 16px;
+    padding-bottom: 10px;
+}
+
+.post-meta {
+    font-size: 14px;
+    color: #666;
+}
+
+.post-buttons {
+    margin-left: auto; /* Push post-buttons to the right */
+}
+
+.join-button,
+.other-actions-button {
+    padding: 8px 12px;
+    font-size: 12px;
+    background-color: #023584;
+    color: #fff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.other-actions-button {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px; /* Add padding for spacing */
+}
+
+.other-actions-button::before,
+.other-actions-button::after,
+.other-actions-button span,
+.other-actions-button .additional-dot {
+    content: '';
+    height: 4px;
+    width: 4px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    margin: 0 2px; /* Adjust margin for spacing */
+}
+
+.post-action-button{
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+}
+
+
+/* aside */
+
+aside {
+    width: 250px; /* Adjust the width as needed */
+    height: 370px;
+    border-radius: 15px;
+    background-color: #F9FAFA;
+    margin-left: 1100px;
+    margin-top: -1400px;
+
+  }
+
+  aside ul {
+    list-style-type: none; /* Remove default list styles */
+    padding: 0px; /* Remove default padding for the list */
+  }
+
+  aside li {
+    margin-bottom: 10px; /* Adjust spacing between list items */
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .icon-container-side  {
+    width: 40px; /* Adjust the width of the icon as needed */
+    height: 40px; /* Adjust the height of the icon as needed */
+    margin-right: 8px; /* Adjust the margin between icon and text */
+    margin-top: -2px;
+    border-radius: 50%;
+}
+
+  aside h2{
+    font-size: 13px; /* Adjust the font size for community names */
+    color: #555; /* Adjust the text color for community names */
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+
+  aside strong {
+    font-size: 15px; /* Adjust the font size for community names */
+    color: #333; /* Adjust the text color for community names */
+  }
+
+  aside p {
+    font-size: 14px; /* Adjust the font size for description text */
+    color: #555; /* Adjust the text color for description text */
+    margin-top: 3px;
+  }
+
+  .see-more-aside{
+    font-size: 13px; /* Adjust the font size for description text */
+    color: #555; /* Adjust the text color for description text */
+    padding-left: 10px;
+  }
+
+/* login form */
+
+.login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    text-align: center;
+    width: 300px; /* Adjust the width as needed */
+    margin: 50px auto; /* Center the container and add some margin to the top */
+}
+
+.reddit-logo {
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.additional-options {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+/* Adjusted font size for "Remember me" and "Forgot password?" */
+.additional-options label,
+.additional-options a {
+    font-size: 12px;
+}
+
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.LogIn {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-button {
+    background-color: #ff4500;
+    color: #fff;
+    /* Add any other styles as needed */
+}
+
+/* Styles for the background container */
+.background-container {
+    background-image: url('pics/redditwallpaper.jpg'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-position: center;
+    height: 100vh; /* Adjust the height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Styles for the login container */
+.login-container {
+    background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent white background to make text readable */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
